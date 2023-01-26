@@ -389,7 +389,7 @@ describe "/subtract" do
 end
 
 describe "/subtract" do
-  it "displays the result of the subtraction when the form is submitted", points: 1 do
+  it "displays the difference when the form is submitted", points: 1 do
     visit "/subtract"
 
     fill_in "Subtract this:", with: 69.0
@@ -444,7 +444,7 @@ describe "/multiply" do
 end
 
 describe "/multiply" do
-  it "displays the sum when the form is submitted", points: 1 do
+  it "displays the product when the form is submitted", points: 1 do
     visit "/multiply"
 
     fill_in "Multiply this:", with: 62
@@ -499,7 +499,7 @@ describe "/divide" do
 end
 
 describe "/divide" do
-  it "displays the sum when the form is submitted", points: 1 do
+  it "displays the quotient when the form is submitted", points: 1 do
     visit "/divide"
 
     fill_in "Divide this:", with: 62
