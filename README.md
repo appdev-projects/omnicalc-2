@@ -68,7 +68,7 @@ Try making a page appear at the URL `/add`. Add a form to it that takes users to
 ### Optional
 
  - **Street to Coordinates:** Figure out how to turn an arbitrary street address (find a place that is [sort of rainy](https://www.rainviewer.com/) right now to test with) into a latitude/longitude using the Geocoding API.
- - **Coordinates to weather:** Figure out how to turn a latitude/longitude pair into a weather forecast using the Dark Sky API Show the information displayed in the target:
+ - **Coordinates to weather:** Figure out how to turn a latitude/longitude pair into a weather forecast using the Pirate Weather API: Show the information displayed in the target:
     - Current Temperature
     - Current summaray
     - Outlooks for next sixy minutes, several hours, several days
