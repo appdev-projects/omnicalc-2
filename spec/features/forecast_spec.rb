@@ -6,10 +6,12 @@ describe "/coords_to_weather/new" do
     # captures two potential URL patterns from the controller forceast API calls
     old_forecasts_url = /.*api.forecast.io\/forecast\/.*\/#{Regexp.new('38.8977332')},#{Regexp.new('-77.0365305')}/
     new_forecasts_url = /.*api.darksky.net\/forecast\/.*\/#{Regexp.new('38.8977332')},#{Regexp.new('-77.0365305')}/
+    pirate_forecasts_url = /.*api.pirateweather.net\/forecast\/.*\/#{Regexp.new('38.8977332')},#{Regexp.new('-77.0365305')}/
     # directs those URL patterns to static hardcoded responses that we've pre-
     # saved, instead of waiting for a dynamic web response
     stub_request(:any, old_forecasts_url).to_return(body: File.new('spec/forecasts_response_body.txt'), status: 200)
     stub_request(:any, new_forecasts_url).to_return(body: File.new('spec/forecasts_response_body.txt'), status: 200)
+    stub_request(:any, pirate_forecasts_url).to_return(body: File.new('spec/forecasts_response_body.txt'), status: 200)
     #====================  End setup  =============================#
 
     visit "/coords_to_weather/new"
@@ -24,10 +26,12 @@ describe "/coords_to_weather/new" do
     # captures two potential URL patterns from the controller forceast API calls
     old_forecasts_url = /.*api.forecast.io\/forecast\/.*\/#{Regexp.new('38.8977332')},#{Regexp.new('-77.0365305')}/
     new_forecasts_url = /.*api.darksky.net\/forecast\/.*\/#{Regexp.new('38.8977332')},#{Regexp.new('-77.0365305')}/
+    pirate_forecasts_url = /.*api.pirateweather.net\/forecast\/.*\/#{Regexp.new('38.8977332')},#{Regexp.new('-77.0365305')}/
     # directs those URL patterns to static hardcoded responses that we've pre-
     # saved, instead of waiting for a dynamic web response
     stub_request(:any, old_forecasts_url).to_return(body: File.new('spec/forecasts_response_body.txt'), status: 200)
     stub_request(:any, new_forecasts_url).to_return(body: File.new('spec/forecasts_response_body.txt'), status: 200)
+    stub_request(:any, pirate_forecasts_url).to_return(body: File.new('spec/forecasts_response_body.txt'), status: 200)
     #====================  End setup  =============================#
 
     visit "/coords_to_weather/new"
@@ -42,10 +46,12 @@ describe "/coords_to_weather/new" do
     # captures two potential URL patterns from the controller forceast API calls
     old_forecasts_url = /.*api.forecast.io\/forecast\/.*\/#{Regexp.new('38.8977332')},#{Regexp.new('-77.0365305')}/
     new_forecasts_url = /.*api.darksky.net\/forecast\/.*\/#{Regexp.new('38.8977332')},#{Regexp.new('-77.0365305')}/
+    pirate_forecasts_url = /.*api.pirateweather.net\/forecast\/.*\/#{Regexp.new('38.8977332')},#{Regexp.new('-77.0365305')}/
     # directs those URL patterns to static hardcoded responses that we've pre-
     # saved, instead of waiting for a dynamic web response
     stub_request(:any, old_forecasts_url).to_return(body: File.new('spec/forecasts_response_body.txt'), status: 200)
     stub_request(:any, new_forecasts_url).to_return(body: File.new('spec/forecasts_response_body.txt'), status: 200)
+    stub_request(:any, pirate_forecasts_url).to_return(body: File.new('spec/forecasts_response_body.txt'), status: 200)
     #====================  End setup  =============================#
 
     visit "/coords_to_weather/new"
@@ -61,10 +67,12 @@ describe "/coords_to_weather/new" do
     # captures two potential URL patterns from the controller forceast API calls
     old_forecasts_url = /.*api.forecast.io\/forecast\/.*\/#{Regexp.new('38.8977332')},#{Regexp.new('-77.0365305')}/
     new_forecasts_url = /.*api.darksky.net\/forecast\/.*\/#{Regexp.new('38.8977332')},#{Regexp.new('-77.0365305')}/
+    pirate_forecasts_url = /.*api.pirateweather.net\/forecast\/.*\/#{Regexp.new('38.8977332')},#{Regexp.new('-77.0365305')}/
     # directs those URL patterns to static hardcoded responses that we've pre-
     # saved, instead of waiting for a dynamic web response
     stub_request(:any, old_forecasts_url).to_return(body: File.new('spec/forecasts_response_body.txt'), status: 200)
     stub_request(:any, new_forecasts_url).to_return(body: File.new('spec/forecasts_response_body.txt'), status: 200)
+    stub_request(:any, pirate_forecasts_url).to_return(body: File.new('spec/forecasts_response_body.txt'), status: 200)
     #====================  End setup  =============================#
 
     visit "/coords_to_weather/new"
@@ -80,10 +88,12 @@ describe "/coords_to_weather/new" do
     # captures two potential URL patterns from the controller forceast API calls
     old_forecasts_url = /.*api.forecast.io\/forecast\/.*\/#{Regexp.new('38.8977332')},#{Regexp.new('-77.0365305')}/
     new_forecasts_url = /.*api.darksky.net\/forecast\/.*\/#{Regexp.new('38.8977332')},#{Regexp.new('-77.0365305')}/
+    pirate_forecasts_url = /.*api.pirateweather.net\/forecast\/.*\/#{Regexp.new('38.8977332')},#{Regexp.new('-77.0365305')}/
     # directs those URL patterns to static hardcoded responses that we've pre-
     # saved, instead of waiting for a dynamic web response
     stub_request(:any, old_forecasts_url).to_return(body: File.new('spec/forecasts_response_body.txt'), status: 200)
     stub_request(:any, new_forecasts_url).to_return(body: File.new('spec/forecasts_response_body.txt'), status: 200)
+    stub_request(:any, pirate_forecasts_url).to_return(body: File.new('spec/forecasts_response_body.txt'), status: 200)
     #====================  End setup  =============================#
 
     visit "/coords_to_weather/new"
@@ -99,10 +109,12 @@ describe "/coords_to_weather/new" do
     # captures two potential URL patterns from the controller forceast API calls
     old_forecasts_url = /.*api.forecast.io\/forecast\/.*\/#{Regexp.new('38.8977332')},#{Regexp.new('-77.0365305')}/
     new_forecasts_url = /.*api.darksky.net\/forecast\/.*\/#{Regexp.new('38.8977332')},#{Regexp.new('-77.0365305')}/
+    pirate_forecasts_url = /.*api.pirateweather.net\/forecast\/.*\/#{Regexp.new('38.8977332')},#{Regexp.new('-77.0365305')}/
     # directs those URL patterns to static hardcoded responses that we've pre-
     # saved, instead of waiting for a dynamic web response
     stub_request(:any, old_forecasts_url).to_return(body: File.new('spec/forecasts_response_body.txt'), status: 200)
     stub_request(:any, new_forecasts_url).to_return(body: File.new('spec/forecasts_response_body.txt'), status: 200)
+    stub_request(:any, pirate_forecasts_url).to_return(body: File.new('spec/forecasts_response_body.txt'), status: 200)
     #====================  End setup  =============================#
 
     visit "/coords_to_weather/new"
@@ -118,10 +130,12 @@ describe "/coords_to_weather/new" do
     # captures two potential URL patterns from the controller forceast API calls
     old_forecasts_url = /.*api.forecast.io\/forecast\/.*\/#{Regexp.new('38.8977332')},#{Regexp.new('-77.0365305')}/
     new_forecasts_url = /.*api.darksky.net\/forecast\/.*\/#{Regexp.new('38.8977332')},#{Regexp.new('-77.0365305')}/
+    pirate_forecasts_url = /.*api.pirateweather.net\/forecast\/.*\/#{Regexp.new('38.8977332')},#{Regexp.new('-77.0365305')}/
     # directs those URL patterns to static hardcoded responses that we've pre-
     # saved, instead of waiting for a dynamic web response
     stub_request(:any, old_forecasts_url).to_return(body: File.new('spec/forecasts_response_body.txt'), status: 200)
     stub_request(:any, new_forecasts_url).to_return(body: File.new('spec/forecasts_response_body.txt'), status: 200)
+    stub_request(:any, pirate_forecasts_url).to_return(body: File.new('spec/forecasts_response_body.txt'), status: 200)
     #====================  End setup  =============================#
 
     visit "/coords_to_weather/new"
